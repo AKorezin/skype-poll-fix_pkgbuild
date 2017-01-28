@@ -24,9 +24,8 @@ package() {
 	else
 		libdir="usr/lib32";
 	fi
-	pwd;
-	ls -al;
+
 	cd "${srcdir}/${_pkgname}";
-	ls -al;
-	install -Dm644 skype-poll-fix.so "${pkgdir}/${libdir}/skype-poll-fix.so"
+
+	install -Dm644 skype-poll-fix.so "${pkgdir}/${libdir}/skype-poll-fix.so";
 }
